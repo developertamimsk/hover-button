@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000025;
+    font-size: 40px;
+    font-family: fantasy;
+    font-style: italic;
+
+}
+.button-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-box a{
+    display: inline-block;
+    text-decoration: none;
+    color: #e84118;
+    background: #f5f6fa;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+.button-box a::before ,a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #ff1f71;
+    border-radius: 5px;
+    transition: 1s;
+    box-shadow: 0px -1px 35px 1px #ff1f71;
+}
+.button-box a::before{
+    width: 0;
+    height: 5px;
+    top: 0;
+    right: 0;
+}
+.button-box a:hover::before{
+    width: 100%;
+}
+
+.button-box a::after{
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+}
+.button-box a:hover::after{
+    width: 100%;
+}
+.button-box a span{
+        display: inline-block;
+}
+.button-box a span::before , a span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #ff1f71;
+    border-radius: 5px;
+    transition: 1s;
+    box-shadow: 0px -1px 35px 1px #ff1f71;
+}
+.button-box a span::before{
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+}
+.button-box a:hover span::before{
+    height: 100%;
+}
+
+.button-box a span::after{
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+}
+.button-box a:hover span::after{
+    height: 100%;
+}
+
